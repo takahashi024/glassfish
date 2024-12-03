@@ -93,11 +93,7 @@ public class PingConnectionPool implements AdminCommand {
     @Inject
     private Applications applications;
 
-    @Param(
-        optional = true,
-        alias = "targetName",
-        obsolete = true,
-        defaultValue = SystemPropertyConstants.DAS_SERVER_NAME)
+    @Param(optional = true, alias = "targetName", obsolete = true)
     private String target;
 
     /**
